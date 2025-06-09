@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>باشگاه پینگ‌پنگ شهاب</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Tahoma', sans-serif;
+      direction: rtl;
+      background: #f0f4f8;
+      color: #333;
+    }
+    header {
+      background: #004d40;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+    nav {
+      background: #00796b;
+      padding: 10px;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+    }
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .container {
+      padding: 20px;
+      max-width: 900px;
+      margin: auto;
+    }
+    .hero {
+      background: #b2dfdb;
+      padding: 40px;
+      text-align: center;
+      border-radius: 12px;
+    }
+    .form-section {
+      margin-top: 40px;
+      background: #fff;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+    input, textarea {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+    }
+    button {
+      padding: 10px 20px;
+      background: #004d40;
+      color: #fff;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+    footer {
+      text-align: center;
+      background: #004d40;
+      color: #fff;
+      padding: 10px;
+      margin-top: 50px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>باشگاه پینگ‌پنگ شهاب</h1>
+    <p>آموزش، مسابقه، پیشرفت</p>
+  </header>
+
+  <nav>
+    <a href="#">خانه</a>
+    <a href="#">درباره ما</a>
+    <a href="#">ثبت‌نام</a>
+    <a href="#">تماس با ما</a>
+  </nav>
+
+  <div class="container">
+    <div class="hero">
+      <h2>به باشگاه حرفه‌ای پینگ‌پنگ خوش آمدید</h2>
+      <p>ما بهترین دوره‌ها، مسابقات و مربیان را برای شما فراهم کرده‌ایم.</p>
+    </div>
+
+    <div class="form-section">
+      <h3>فرم ثبت‌نام در باشگاه</h3>
+      <form onsubmit="register(event)">
+        <input type="text" id="name" placeholder="نام و نام خانوادگی" required />
+        <input type="tel" id="phone" placeholder="شماره تماس" required />
+        <input type="email" id="email" placeholder="ایمیل (اختیاری)" />
+        <textarea id="note" placeholder="توضیحات" rows="3"></textarea>
+        <button type="submit">ثبت‌نام</button>
+      </form>
+      <div id="success" style="margin-top: 15px; color: green;"></div>
+    </div>
+  </div>
+
+  <footer>
+    &copy; 2025 باشگاه پینگ‌پنگ شهاب
+  </footer>
+
+  <script>
+    function register(e) {
+      e.preventDefault();
+      document.getElementById('success').innerText = "✅ ثبت‌نام شما با موفقیت انجام شد!";
+    }
+  </script>
+
+</body>
+</html>
